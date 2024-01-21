@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        h1 {
+            font-family: Tahoma, sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+        p {
+            color: green;
+            margin-left: 290px;
+        }
+
+        #cc2 {
+            font-style: italic;
+            color: blue;
+            max-width: 600px;
+            margin-left: 350px;
+        }
+
+        div {
+            font-weight: bold;
+            font-size: 25px;
+            background-image: url(ariseee.png);
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 50px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            color: white;
+            font-weight: bold;
+            margin-left: 350px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Java Script colorChanger() Hands-On</h1>
+    <div>
+        <p id="cc">"나 혼자만 레벨업"</p>
+        <p id="cc2">Arise!</p>
+        <button id="colorBtn">Click Me</button>
+    </div>
+
+<script>
+    const colorBtn = document.getElementById('colorBtn');
+    const cc2 = document.getElementById('cc2')
+    const cc =  document.getElementById('cc');
+
+    function myFunction() {
+        if (cc.style.color === 'green') {
+            cc.style.color = 'blue';
+        } else {
+            cc.style.color = 'green'
+        }
+    }
+
+    function myFunction2() {
+        if (cc2.style.color === 'blue') {
+            cc2.style.color = 'green';
+        } else {
+            cc2.style.color = 'blue'
+        };
+    }
+
+    colorBtn.addEventListener("click", myFunction);
+    colorBtn.addEventListener("click", myFunction2);
+</script>
+
+</body>
+</html>
